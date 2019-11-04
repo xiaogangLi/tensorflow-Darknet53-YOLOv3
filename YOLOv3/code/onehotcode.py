@@ -1,16 +1,10 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 28 19:46:04 2019
-
-@author: LiXiaoGang
-"""
 
 import numpy as np
 import parameters as para
 
 
 def onehotcode_all_classses(data):
-    
     '''
     Function: encode each class using one hot encode style.
     Args:
@@ -18,7 +12,6 @@ def onehotcode_all_classses(data):
     Returns:
         label: a dictionary.
     '''
-    
     num_classess = len(data.Class_name)
     oneHotEncode = np.zeros(shape=[num_classess,num_classess])
     
@@ -32,7 +25,6 @@ def onehotcode_all_classses(data):
 
 
 def onehotencode(video_name_list):
-    
     '''
     Function: encode each class using one hot encode style.
     Args:
@@ -40,7 +32,6 @@ def onehotencode(video_name_list):
     Returns:
         label: a array
     '''
-    
     label = []
     oneHotEncodeDict = onehotcode_all_classses(para.LABELS)
     
@@ -52,7 +43,6 @@ def onehotencode(video_name_list):
 
 
 def onehotdecode(one_hot_code):
-    
     '''
     Function: decode one hot code as classess.
     Args:
@@ -60,7 +50,6 @@ def onehotdecode(one_hot_code):
     Returns:
         class_name: a class name 
     '''
-    
     one_hot_code = list(one_hot_code)
     max_value_index = one_hot_code.index(max(one_hot_code))
     oneHotEncodeDict = onehotcode_all_classses(para.LABELS)
