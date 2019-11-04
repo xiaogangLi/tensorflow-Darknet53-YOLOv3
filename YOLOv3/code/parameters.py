@@ -21,7 +21,7 @@ MAX_NUM_GT = 10              # Suppose that each image contains up to 10 objects
 NUM_CLUSTER = 9    
 MAX_ITERS = 20
 
-# YOLOv2 para
+# YOLOv3 para
 CHANNEL = 3
 INPUT_SIZE = 416
 OBJECT_SCALE = 5
