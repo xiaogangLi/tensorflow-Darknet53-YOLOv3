@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Oct 21 19:44:04 2019
-
-@author: LiXiaoGang
-"""
 
 import tensorflow as tf
 import parameters as para
@@ -102,8 +97,8 @@ def YOLOLoss(pred_loc,pred_cls,gt_loc,gt_cls,gt_mask,anchors,gt_box,gtruth,ind_c
                     # =========================================================
                
                 idx = tf.arg_max(iou_list,dimension=0)
-                loss1 = flag*(tf.gather(loc_loss_list,idx)+tf.gather(cls_loss_list,idx)+tf.gather(obj_loss_list,idx))     # 当目标中心落在当前 grid cell
-                loss2 = (1.0 - flag)*tf.reduce_sum(noobj_loss_list)       # binary cross-entropy loss                     # 当目标中心没有落在当前 grid cell
+                loss1 = flag*(tf.gather(loc_loss_list,idx)+tf.gather(cls_loss_list,idx)+tf.gather(obj_loss_list,idx))
+                loss2 = (1.0 - flag)*tf.reduce_sum(noobj_loss_list)       # binary cross-entropy loss
                 loss_add = loss_add + loss1 + loss2
                 return [j+1,loss_add]
             
