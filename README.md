@@ -55,6 +55,7 @@ The model will be saved in directory `../YOLOv3/model/checkpoint`, and some dete
 run  
 `tensorboard --logdir=model/`   
 Open the URL in browser to visualize model.  
+<div align=center><img width="416" height="416" src="https://github.com/xiaogangLi/tensorflow-Darknet53-YOLOv3/blob/master/YOLOv3/pic/graph.png"/></div>
 
 ## Examples  
 Here are some detection examples in my dataset:   
@@ -63,10 +64,3 @@ Here are some detection examples in my dataset:
 ![Image](https://github.com/xiaogangLi/tensorflow-Darknet53-YOLOv3/blob/master/YOLOv3/pic/example1.jpg)
 ![Image](https://github.com/xiaogangLi/tensorflow-Darknet53-YOLOv3/blob/master/YOLOv3/pic/example2.jpg)
 ![Image](https://github.com/xiaogangLi/tensorflow-Darknet53-YOLOv3/blob/master/YOLOv3/pic/example3.jpg)
-<div align=center><img width="416" height="416" src="https://github.com/xiaogangLi/tensorflow-Darknet53-YOLOv3/blob/master/YOLOv3/pic/example0.jpg"/></div>
-
-<div align=center><img width="416" height="416" src="https://github.com/xiaogangLi/tensorflow-Darknet53-YOLOv3/blob/master/YOLOv3/pic/example1.jpg"/></div>
-
-<div align=center><img width="416" height="416" src="https://github.com/xiaogangLi/tensorflow-Darknet53-YOLOv3/blob/master/YOLOv3/pic/example2.jpg"/></div>
-
-<div align=center><img width="416" height="416" src="https://github.com/xiaogangLi/tensorflow-Darknet53-YOLOv3/blob/master/YOLOv3/pic/example3.jpg"/></div>
