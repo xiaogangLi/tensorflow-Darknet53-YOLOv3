@@ -54,7 +54,7 @@ The model will be saved in directory `../YOLOv3/model/checkpoint`, and some dete
 `cd ../YOLOv3`  
 run  
 `tensorboard --logdir=model/`   
-Open the URL in browser to visualize model.  
+Open the URL in browser to visualize model. Below  is the graph of my model:  
 <div align=center><img width="1000" height="700" src="https://github.com/xiaogangLi/tensorflow-Darknet53-YOLOv3/blob/master/YOLOv3/pic/graph.png"/></div>
 
 ## Examples  
