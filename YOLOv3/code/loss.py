@@ -52,8 +52,7 @@ def YOLOLoss(pred_loc,pred_cls,gt_loc,gt_cls,gt_mask,anchors,gt_box,gtruth,ind_c
                     gt_box_class = gt_class[4*k:4*k+4]
                     pred_box_offset = pred_offset[5*k:5*k+4]
                     pred_obj_sig = tf.nn.sigmoid(pred_offset[5*k+4])
-                    pred_cls_sig = tf.nn.sigmoid(pre_class[4*k:4*k+4])
-                    
+                    pred_cls_sig = tf.nn.sigmoid(pre_class[4*k:4*k+4])                    
                     
                     # =========================================================
                     # when the center of the object falls into the grid cell
@@ -69,8 +68,7 @@ def YOLOLoss(pred_loc,pred_cls,gt_loc,gt_cls,gt_mask,anchors,gt_box,gtruth,ind_c
                     cls_loss = -para.CLASS_SCALE*tf.reduce_sum(gt_box_class*tf.log(tf.clip_by_value(pred_cls_sig,eps,1.0-eps)) + 
                                                                (1.0-gt_box_class)*tf.log(tf.clip_by_value(1.0-pred_cls_sig,eps,1.0-eps)))
                     cls_loss_list.append(cls_loss)
-                    # =========================================================
-                    
+                    # =========================================================                    
                     
                     # =========================================================
                     # when the center of the object does not fall into the grid cell
