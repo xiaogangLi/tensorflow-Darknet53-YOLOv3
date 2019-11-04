@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 28 15:46:14 2019
-https://blog.csdn.net/xiaohu2022/article/details/80666655
-https://blog.csdn.net/qq_37541097/article/details/81214953
-
-@author: LiXiaoGang        
-"""
+       
 from __future__ import division
 
 import os
@@ -48,7 +42,7 @@ def training_net():
     Saver = tf.train.Saver(var_list=tf.global_variables(),max_to_keep=5)
     with tf.Session() as sess:
         
-#        writer = tf.summary.FileWriter(os.path.join(para.PATH,'model'), sess.graph)
+        writer = tf.summary.FileWriter(os.path.join(para.PATH,'model'), sess.graph)
         init_var_op = tf.global_variables_initializer()
         sess.run(init_var_op)
         
