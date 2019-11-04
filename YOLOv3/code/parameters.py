@@ -1,8 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 25 10:47:42 2019
-@author: LiXiaoGang
-"""
+
 from __future__ import division
 
 import os
@@ -13,11 +10,11 @@ PATH = os.path.dirname(os.getcwd())
 LABELS = pd.read_csv(os.path.join(PATH,'label','label.txt'))
 
 # Training para
-BATCH_SIZE = 5
+BATCH_SIZE = 16
 LEARNING_RATE = 0.0001
 TRAIN_STEPS = 500000
 PIC_TYPE = 'jpg'             # the picture format of training images.
-RESTORE_MODEL = True
+RESTORE_MODEL = False
 MAX_NUM_GT = 10              # Suppose that each image contains up to 10 objects
 
 # K-Means para
