@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Aug 31 16:50:44 2019
-
-@author: LiXiaoGang
-"""
 
 import parameters as para
 import tensorflow as tf
