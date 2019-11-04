@@ -157,3 +157,4 @@ def get_groundtruth(xml):
     
     gt_info = {'loc':gt_loc,'cls':gt_cls,'mask':masks,'anchors':prior_anchors,'box':gt_box,'ind_cx':ind_cx,'ind_cy':ind_cy,'feat_scale':feat_scale,'gtruth':truth_array}
     return gt_info
+
